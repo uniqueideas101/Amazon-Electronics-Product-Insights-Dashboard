@@ -115,7 +115,7 @@ fig = px.bar(
 st.plotly_chart(fig)
 
 st.markdown("""
-<div style="background-color:#F0F2F6; padding:15px; border-radius:10px; border:1px solid #ddd">
+<div style="background-color:#000000; padding:15px; border-radius:10px; border:1px solid #ddd">
     <h3 style="color:#333;">Product Insights Summary</h3>
     <ul>
         <li>Phones & Laptops dominate purchases despite minimal discounts (brand-driven demand).</li>
@@ -133,6 +133,7 @@ st.markdown("""
     </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
