@@ -5,7 +5,9 @@ import plotly.express as px
 # Load data
 @st.cache_data
 def load_data():
-    return pd.read_csv("amazon_clean_final.csv")
+    url = "https://drive.google.com/uc?id=1WeD2MS13KBD_VmKUjv9NwX4le3oeGh6d" 
+    return pd.read_csv(url)
+
 
 df = load_data()
 
@@ -134,3 +136,4 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
