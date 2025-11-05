@@ -116,7 +116,7 @@ st.plotly_chart(fig)
 
 st.markdown("""
 <div style="background-color:#000000; padding:15px; border-radius:10px; border:1px solid #ddd">
-    <h3 style="color:#333;">Product Insights Summary</h3>
+    <h3 style="color:#3750AB;">Product Insights Summary</h3>
     <ul>
         <li>Phones & Laptops dominate purchases despite minimal discounts (brand-driven demand).</li>
         <li>Accessories respond strongly to discounts (price-sensitive segment).</li>
@@ -125,7 +125,7 @@ st.markdown("""
         <li>Coupons, Best Seller & Sponsorship tags perform best.</li>
     </ul>
     <hr>
-    <h4 style="color:#444;">Strategic Recommendations</h4>
+    <h4 style="color:#3750AB;">Strategic Recommendations</h4>
     <ul>
         <li>Incentivize reviews to boost social proof.</li>
         <li>Use differentiated promotion: visibility for premium, discounts for accessories.</li>
@@ -133,6 +133,7 @@ st.markdown("""
     </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
