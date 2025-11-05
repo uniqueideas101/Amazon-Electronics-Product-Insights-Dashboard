@@ -114,26 +114,25 @@ fig = px.bar(
 
 st.plotly_chart(fig)
 
-
-
-st.markdown("---")
 st.markdown("""
-<div style="background-color:#f8f9fa;padding:15px;border-radius:10px">
-<h3>Product Insights Summary</h3>
-<ul>
-<li>Phones & Laptops dominate purchases despite minimal discounts which shows brand-driven demand.</li>
-<li>Accessories respond strongly to discounts, making it a price-sensitive segment.</li>
-<li>Laptops have highest reviews (4.7) which indicates strong satisfaction & retention potential.</li>
-<li>Most devices rated 4–5 stars, but low review volume depicting underused trust signal.</li>
-<li>Coupons, Best Seller & Sponsorship tags sellout 100%.</li>
-</ul>
-<hr>
-<h4>Strategic Recommendations</h4>
-<ul>
-<li>Incentivize reviews to boost social proof.</li>
-<li>Use differentiated promotion: visibility for premium, discounts for accessories.</li>
-<li>Experiment with cross-sells (e.g., headphones with laptops).</li>
-</ul>
+<div style="background-color:#F0F2F6; padding:15px; border-radius:10px; border:1px solid #ddd">
+    <h3 style="color:#333;">Product Insights Summary</h3>
+    <ul>
+        <li>Phones & Laptops dominate purchases despite minimal discounts (brand-driven demand).</li>
+        <li>Accessories respond strongly to discounts (price-sensitive segment).</li>
+        <li>Laptops have highest reviews (4.7) → strong satisfaction & retention potential.</li>
+        <li>Most devices rated 4–5 stars, but low review volume (underused trust signal).</li>
+        <li>Coupons, Best Seller & Sponsorship tags perform best.</li>
+    </ul>
+    <hr>
+    <h4 style="color:#444;">Strategic Recommendations</h4>
+    <ul>
+        <li>Incentivize reviews to boost social proof.</li>
+        <li>Use differentiated promotion: visibility for premium, discounts for accessories.</li>
+        <li>Experiment with cross-sells (e.g., headphones with laptops).</li>
+    </ul>
 </div>
 """, unsafe_allow_html=True)
+
+
 
