@@ -2,16 +2,15 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Load data
 @st.cache_data
 def load_data():
-    url = "https://drive.google.com/uc?id=1WeD2MS13KBD_VmKUjv9NwX4le3oeGh6d" 
-    return pd.read_csv(url)
-
-
+    try:
+        return pd.read_csv("data.csv")
+    except Exception as e:
+        st.error(f"Dataset loading failed: {e}")
+        return pd.DataFrame()
 df = load_data()
 
-# Title
 st.title("Amazon Electronics Product Insights Dashboard")
 
 # Sidebar filters
