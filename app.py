@@ -3,12 +3,11 @@ import pandas as pd
 import plotly.express as px
 
 @st.cache_data
+
 def load_data():
-    try:
-        return pd.read_csv("data.csv")
-    except Exception as e:
-        st.error(f"Dataset loading failed: {e}")
-        return pd.DataFrame()
+    url = "https://docs.google.com/spreadsheets/d/10YkoTlLDpPbCrZu4omkj3ZbWrsCd4BO7UPI1UkSOb9w/edit?usp=sharing&output=csv" 
+    return pd.read_csv(url)
+
 df = load_data()
 
 st.title("Amazon Electronics Product Insights Dashboard")
